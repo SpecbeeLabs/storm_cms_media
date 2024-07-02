@@ -12,6 +12,7 @@
         "drupal/focal_point": "^2.1",
         "drupal/webp": "^1.0@RC",
         "drupal/media_entity_download": "^2.3",
-        "drupal/filefield_paths": "^1.0@beta"
+        "drupal/filefield_paths": "^1.0@beta",
+        "drupal/lazy": "3.x-dev"
     }
 }
