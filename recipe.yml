@@ -1,0 +1,9 @@
+name: Storm CMS Media
+description: Storm CMS Media
+install:
+  - media
+  - media_library
+  - filefield_paths
+  - focal_point
+  - media_entity_download
+  - webp
