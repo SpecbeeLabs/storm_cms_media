@@ -14,3 +14,22 @@ install:
   - responsive_image
   - lazy
   - taxonomy
+  - media_file_delete
+config:
+  actions:
+    # Set permissions for anonymous role.
+    user.role.anonymous:
+      ensure_exists:
+        id: anonymous
+      grantPermissions:
+        - 'download media'
+        - 'view media'
+    # Set permissions for authenticated role.
+    user.role.authenticated:
+      ensure_exists:
+        id: authenticated
+      grantPermissions:
+        - 'download media'
+        - 'view media'
+        - 'delete media'
+        - 'delete own files'

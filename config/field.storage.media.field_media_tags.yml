@@ -4,6 +4,8 @@ dependencies:
   module:
     - media
     - taxonomy
+_core:
+  default_config_hash: 1Nb3KszP6ysYgX7RuIqjVUB6aNov1GrmpHpcqYijrcI
 id: media.field_media_tags
 field_name: field_media_tags
 entity_type: media
