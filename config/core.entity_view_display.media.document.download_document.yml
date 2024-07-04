@@ -12,8 +12,6 @@ third_party_settings:
   layout_builder:
     enabled: false
     allow_custom: false
-_core:
-  default_config_hash: Ue2D9UBZwS3Brs8Z06aU9o2B8a6OLpSbd83kmX9bkfU
 id: media.document.download_document
 targetEntityType: media
 bundle: document

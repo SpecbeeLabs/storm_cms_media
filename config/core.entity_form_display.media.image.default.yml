@@ -13,8 +13,6 @@ dependencies:
     - path
     - select2
     - text
-_core:
-  default_config_hash: w4xWcmH5bjJmqILkXyy8v3ql5SNq9_jUE7MalSOyi18
 id: media.image.default
 targetEntityType: media
 bundle: image
