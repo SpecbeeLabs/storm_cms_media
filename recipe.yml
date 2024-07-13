@@ -1,5 +1,9 @@
 name: Storm CMS Media
 description: Storm CMS Media
+recipes:
+  - core/recipes/document_media_type
+  - core/recipes/remote_video_media_type
+  - core/recipes/local_video_media_type
 install:
   - media
   - media_library
@@ -7,3 +11,21 @@ install:
   - focal_point
   - media_entity_download
   - webp
+  - responsive_image
+  - lazy
+  - taxonomy
+  - media_file_delete
+config:
+  actions:
+    # Set permissions for anonymous role.
+    user.role.anonymous:
+      grantPermissions:
+        - 'download media'
+        - 'view media'
+    # Set permissions for authenticated role.
+    user.role.authenticated:
+      grantPermissions:
+        - 'download media'
+        - 'view media'
+        - 'delete media'
+        - 'delete own files'
