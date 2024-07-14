@@ -3,26 +3,47 @@ status: true
 dependencies:
   config:
     - core.entity_form_mode.media.media_library
-    - field.field.media.image.field_media_caption
-    - field.field.media.image.field_media_credit
+    - field.field.media.image.field_caption_credit
     - field.field.media.image.field_media_image
     - field.field.media.image.field_media_tags
-    - image.style.thumbnail
+    - image.style.medium
     - media.type.image
   module:
-    - image
+    - focal_point
+    - select2
+    - text
 id: media.image.media_library
 targetEntityType: media
 bundle: image
 mode: media_library
 content:
-  field_media_image:
-    type: image_image
-    weight: 5
+  field_caption_credit:
+    type: text_textarea
+    weight: 3
     region: content
     settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
+      rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+  field_media_image:
+    type: image_focal_point
+    weight: 1
+    region: content
+    settings:
+      progress_indicator: bar
+      preview_image_style: medium
+      preview_link: true
+      offsets: '50,50'
+    third_party_settings: {  }
+  field_media_tags:
+    type: select2_entity_reference
+    weight: 2
+    region: content
+    settings:
+      width: 100%
+      autocomplete: false
+      match_operator: CONTAINS
+      match_limit: 10
     third_party_settings: {  }
   name:
     type: string_textfield
@@ -34,9 +55,9 @@ content:
     third_party_settings: {  }
 hidden:
   created: true
-  field_media_caption: true
-  field_media_credit: true
-  field_media_tags: true
   path: true
+  publish_on: true
+  scheduler_settings: true
   status: true
   uid: true
+  unpublish_on: true

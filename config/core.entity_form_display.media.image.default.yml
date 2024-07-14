@@ -2,14 +2,13 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.media.image.field_media_caption
-    - field.field.media.image.field_media_credit
+    - field.field.media.image.field_caption_credit
     - field.field.media.image.field_media_image
     - field.field.media.image.field_media_tags
-    - image.style.thumbnail
+    - image.style.media_library
     - media.type.image
   module:
-    - image
+    - focal_point
     - path
     - select2
     - text
@@ -24,29 +23,23 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_media_caption:
+  field_caption_credit:
     type: text_textarea
-    weight: 101
+    weight: 104
     region: content
     settings:
-      rows: 5
-      placeholder: ''
-    third_party_settings: {  }
-  field_media_credit:
-    type: text_textfield
-    weight: 102
-    region: content
-    settings:
-      size: 60
+      rows: 3
       placeholder: ''
     third_party_settings: {  }
   field_media_image:
-    type: image_image
+    type: image_focal_point
     weight: 0
     region: content
     settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
+      progress_indicator: bar
+      preview_image_style: media_library
+      preview_link: true
+      offsets: '50,50'
     third_party_settings: {  }
   field_media_tags:
     type: select2_entity_reference
@@ -89,4 +82,6 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  publish_on: true
+  unpublish_on: true
