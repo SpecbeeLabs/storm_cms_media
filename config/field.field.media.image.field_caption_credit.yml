@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_caption_credit
+    - filter.format.basic_html
+    - media.type.image
+  module:
+    - text
+id: media.image.field_caption_credit
+field_name: field_caption_credit
+entity_type: media
+bundle: image
+label: 'Caption & Credit'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+field_type: text_long
