@@ -15,6 +15,7 @@ install:
   - lazy
   - taxonomy
   - media_file_delete
+  - select2
 config:
   actions:
     # Set permissions for anonymous role.
