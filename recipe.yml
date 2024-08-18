@@ -19,15 +19,15 @@ install:
   - select2
 config:
   actions:
-    # Set permissions for anonymous role.
     user.role.anonymous:
       grantPermissions:
         - 'download media'
         - 'view media'
-    # Set permissions for authenticated role.
     user.role.authenticated:
       grantPermissions:
         - 'download media'
         - 'view media'
-        - 'delete media'
-        - 'delete own files'
+    user.role.content_editor:
+      grantPermissions:
+        - 'download media'
+        - 'view media'
