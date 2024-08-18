@@ -28,6 +28,8 @@ config:
         - 'download media'
         - 'view media'
     user.role.content_editor:
+      ensure_exists:
+        id: content_editor
       grantPermissions:
         - 'download media'
         - 'view media'
