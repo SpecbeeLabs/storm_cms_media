@@ -21,15 +21,9 @@ config:
   actions:
     user.role.anonymous:
       grantPermissions:
-        - 'download media'
-        - 'view media'
+        - "download media"
+        - "view media"
     user.role.authenticated:
       grantPermissions:
-        - 'download media'
-        - 'view media'
-    user.role.content_editor:
-      ensure_exists:
-        id: content_editor
-      grantPermissions:
-        - 'download media'
-        - 'view media'
+        - "download media"
+        - "view media"
