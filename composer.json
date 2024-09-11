@@ -10,6 +10,7 @@
     ],
     "require": {
         "bower-asset/lazysizes": "^5.1",
+        "drupal/claro_media_library_theme": "^1.0@alpha",
         "drupal/filefield_paths": "^1.0@beta",
         "drupal/focal_point": "^2.1",
         "drupal/lazy": "^4.0",
@@ -18,5 +19,8 @@
         "drupal/select2": "^1.15",
         "drupal/webp": "^1.0@RC",
         "npm-asset/select2": "4.0.13"
+    },
+    "config": {
+        "sort-packages": true
     }
 }
