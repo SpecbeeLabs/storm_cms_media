@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: 1_1_medium
+label: '1:1 Medium (400x400)'
+effects:
+  085a9788-6055-4ca6-a482-c7d1b6800dd8:
+    uuid: 085a9788-6055-4ca6-a482-c7d1b6800dd8
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 400
+      height: 400
+      crop_type: focal_point
+  69c476e7-8a10-436c-be03-c8e19866009a:
+    uuid: 69c476e7-8a10-436c-be03-c8e19866009a
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp

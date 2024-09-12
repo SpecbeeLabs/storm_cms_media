@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: 16_9_medium
+label: "16:9 Medium (1440x810)"
+effects:
+  baade1c4-fdb7-4204-bb16-8b270633060e:
+    uuid: baade1c4-fdb7-4204-bb16-8b270633060e
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 1440
+      height: 810
+      crop_type: focal_point
+  f6539d6a-af9d-49b3-a0b4-3bbffcc0fe9e:
+    uuid: f6539d6a-af9d-49b3-a0b4-3bbffcc0fe9e
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp

@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: 21_9_medium
+label: "21:9 Medium (1400x600)"
+effects:
+  fe28b014-070a-4e0c-853c-bd380e5f9b3e:
+    uuid: fe28b014-070a-4e0c-853c-bd380e5f9b3e
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 1400
+      height: 600
+      crop_type: focal_point
+  baa00d80-6c6a-412f-bfe5-ce71aeecb911:
+    uuid: baa00d80-6c6a-412f-bfe5-ce71aeecb911
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp

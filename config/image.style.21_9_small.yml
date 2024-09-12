@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: 21_9_small
+label: "21:9 Small (420x180)"
+effects:
+  375deac1-31b6-4509-a80a-bc010ba9810e:
+    uuid: 375deac1-31b6-4509-a80a-bc010ba9810e
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 420
+      height: 180
+      crop_type: focal_point
+  ffdea2e0-4b15-4e29-9d90-0c24febb233d:
+    uuid: ffdea2e0-4b15-4e29-9d90-0c24febb233d
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp

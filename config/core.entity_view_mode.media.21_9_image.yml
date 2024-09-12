@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.21_9_image
+label: "21:9 Image"
+description: "Display images in 21:9 aspect ratio"
+targetEntityType: media
+cache: true

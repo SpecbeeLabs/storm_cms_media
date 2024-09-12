@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: 16_9_large
+label: "16:9 Large (1920x1080)"
+effects:
+  c3eb2426-91a1-4cd6-a0f2-8da0f73ca525:
+    uuid: c3eb2426-91a1-4cd6-a0f2-8da0f73ca525
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 1920
+      height: 1080
+      crop_type: focal_point
+  c6b7ad8d-e006-406e-a5e2-9fee5ad37a8c:
+    uuid: c6b7ad8d-e006-406e-a5e2-9fee5ad37a8c
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp

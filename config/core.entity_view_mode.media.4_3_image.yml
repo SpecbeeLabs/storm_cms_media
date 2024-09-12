@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.4_3_image
+label: "4:3 Image"
+description: "Display images into 4:3 aspect ratio"
+targetEntityType: media
+cache: true

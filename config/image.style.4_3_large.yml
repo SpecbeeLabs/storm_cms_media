@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: 4_3_large
+label: '4:3 Large (1220x900)'
+effects:
+  5c8f3191-7308-496e-912b-69b014faff6a:
+    uuid: 5c8f3191-7308-496e-912b-69b014faff6a
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 1220
+      height: 900
+      crop_type: focal_point
+  ab6c06b6-76d3-4c28-83a8-deb01b1423db:
+    uuid: ab6c06b6-76d3-4c28-83a8-deb01b1423db
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp

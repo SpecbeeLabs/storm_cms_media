@@ -1,0 +1,26 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.16_9_large
+    - image.style.16_9_medium
+    - image.style.16_9_small
+  theme:
+    - stark
+id: 16_9_images
+label: "16:9 Images"
+image_style_mappings:
+  - image_mapping_type: image_style
+    image_mapping: 16_9_large
+    breakpoint_id: stark.wide
+    multiplier: 1x
+  - image_mapping_type: image_style
+    image_mapping: 16_9_medium
+    breakpoint_id: stark.narrow
+    multiplier: 1x
+  - image_mapping_type: image_style
+    image_mapping: 16_9_small
+    breakpoint_id: stark.mobile
+    multiplier: 1x
+breakpoint_group: stark
+fallback_image_style: 16_9_small

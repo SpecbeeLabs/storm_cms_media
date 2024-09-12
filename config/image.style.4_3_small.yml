@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: 4_3_small
+label: '4:3 Small (400x300)'
+effects:
+  e99dd59e-3080-4847-8c2d-c6dcea46b593:
+    uuid: e99dd59e-3080-4847-8c2d-c6dcea46b593
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 400
+      height: 300
+      crop_type: focal_point
+  39825ac3-0480-420b-9291-1b7ef137c509:
+    uuid: 39825ac3-0480-420b-9291-1b7ef137c509
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp

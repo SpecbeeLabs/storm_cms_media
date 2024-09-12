@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: 21_9_large
+label: "21:9 Large (2100x900)"
+effects:
+  bc5aa5fe-9ed3-416c-b877-f97942df2c1c:
+    uuid: bc5aa5fe-9ed3-416c-b877-f97942df2c1c
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 2100
+      height: 900
+      crop_type: focal_point
+  add37669-7493-4b00-bffd-759dda675db6:
+    uuid: add37669-7493-4b00-bffd-759dda675db6
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp

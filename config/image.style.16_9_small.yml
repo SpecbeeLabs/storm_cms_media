@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: 16_9_small
+label: "16:9 Small (400x225)"
+effects:
+  bdb79fc8-d099-41ee-b8e6-ae7ba4d28d31:
+    uuid: bdb79fc8-d099-41ee-b8e6-ae7ba4d28d31
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 400
+      height: 225
+      crop_type: focal_point
+  9b381f77-da04-4ca2-b01e-dc167daea9ca:
+    uuid: 9b381f77-da04-4ca2-b01e-dc167daea9ca
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp

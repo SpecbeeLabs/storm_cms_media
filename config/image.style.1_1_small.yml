@@ -1,0 +1,23 @@
+uuid: 1fc6dee6-e23d-4641-a6bb-741924981a78
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: 1_1_small
+label: '1:1 Small (200x200)'
+effects:
+  3aef4da8-33d8-426e-b96d-f30ac89c1a5a:
+    uuid: 3aef4da8-33d8-426e-b96d-f30ac89c1a5a
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 200
+      height: 200
+      crop_type: focal_point
+  03d23906-efd2-4196-87c3-016fefc2e0b5:
+    uuid: 03d23906-efd2-4196-87c3-016fefc2e0b5
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp

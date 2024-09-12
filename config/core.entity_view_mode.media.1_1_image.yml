@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.1_1_image
+label: "1:1 Image"
+description: "Display images in a 1:1 aspect ratio"
+targetEntityType: media
+cache: true

@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: 1_1_large
+label: '1:1 Large (600x600)'
+effects:
+  82fdc20e-db11-48c5-bbc1-113381e61d58:
+    uuid: 82fdc20e-db11-48c5-bbc1-113381e61d58
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 600
+      height: 600
+      crop_type: focal_point
+  4ab0029e-d356-4f1e-bcdc-a2617adcccdc:
+    uuid: 4ab0029e-d356-4f1e-bcdc-a2617adcccdc
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp
